@@ -1,4 +1,4 @@
-class Shell2http < Formula
+class Shell2telegram < Formula
   homepage "https://github.com/msoap/shell2telegram"
   version '1.0'
 
