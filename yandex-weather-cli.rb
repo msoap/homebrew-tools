@@ -1,13 +1,13 @@
 class YandexWeatherCli < Formula
   homepage "https://github.com/msoap/yandex-weather-cli"
-  version '1.1'
+  version '1.2'
 
   if MacOS.prefer_64_bit?
-    url "https://github.com/msoap/yandex-weather-cli/releases/download/1.1/yandex-weather-cli-1.1.amd64.darwin.zip"
-    sha256 "fbb86b726072ca91f78e8a7d1c4e607452cea5fa994cad139e9eb2e76b0c131d"
+    url "https://github.com/msoap/yandex-weather-cli/releases/download/1.2/yandex-weather-cli-1.2.amd64.darwin.zip"
+    sha256 "b478063de7d5e4f87cbad6c2c1a24dc67656a859e701523e0ff070861716d467"
   else
-    url "https://github.com/msoap/yandex-weather-cli/releases/download/1.1/yandex-weather-cli-1.1.386.darwin.zip"
-    sha256 "7e47bfbc4ffd2ac367e9e6bc81ad918c0c59bc79512f30f4c633ade64d3215d0"
+    url "https://github.com/msoap/yandex-weather-cli/releases/download/1.2/yandex-weather-cli-1.2.386.darwin.zip"
+    sha256 "3fd8b1c942c72926bf9826f1ef38699ffbb2cc8db10093ec1ee7f2e818506132"
   end
 
   def install
