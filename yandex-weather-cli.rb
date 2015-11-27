@@ -4,10 +4,10 @@ class YandexWeatherCli < Formula
 
   if MacOS.prefer_64_bit?
     url "https://github.com/msoap/yandex-weather-cli/releases/download/1.3/yandex-weather-cli-1.3.amd64.darwin.zip"
-    sha256 "2d9e3d2decfabf38b6db5796b7b63cd2c444aec833d20aac00c971789685fda2"
+    sha256 "b82b05c391558f2715b17b2cc85b64f976cfcb9a53a3e6644cb9011bde50f034"
   else
     url "https://github.com/msoap/yandex-weather-cli/releases/download/1.3/yandex-weather-cli-1.3.386.darwin.zip"
-    sha256 "7914be74ebba8185982af4e6ceaf7c70b1f183d35d0d4edd8b0fc7ca2fb1233a"
+    sha256 "27b28298cd2425db9e87ea95b28f361692f2418c43e84a43d2299159f3e40a97"
   end
 
   def install
