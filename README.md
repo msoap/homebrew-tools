@@ -4,14 +4,14 @@ Prepare:
 
     brew tap msoap/tools
 
-Homebrew formula for [shell2http](https://github.com/msoap/shell2http)
-
-Install:
+Install [shell2http](https://github.com/msoap/shell2http):
 
     brew install shell2http
 
-Homebrew formula for [yandex-weather-cli](https://github.com/msoap/yandex-weather-cli)
+Install [shell2telegram](https://github.com/msoap/shell2telegram):
 
-Install:
+    brew install shell2telegram
+
+Install [yandex-weather-cli](https://github.com/msoap/yandex-weather-cli):
 
     brew install yandex-weather-cli
