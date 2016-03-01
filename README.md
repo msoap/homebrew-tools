@@ -19,3 +19,7 @@ Install [yandex-weather-cli](https://github.com/msoap/yandex-weather-cli):
 Install [html2data](https://github.com/msoap/html2data):
 
     brew install html2data
+
+Install [go-carpet](https://github.com/msoap/go-carpet):
+
+    brew install go-carpet
