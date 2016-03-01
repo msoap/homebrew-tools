@@ -1,5 +1,6 @@
 class GoCarpet < Formula
   homepage "https://github.com/msoap/go-carpet"
+  desc "Tool for viewing test coverage for Go source files"
   version '1.0'
 
   if MacOS.prefer_64_bit?
