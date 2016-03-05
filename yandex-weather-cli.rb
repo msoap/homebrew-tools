@@ -1,6 +1,6 @@
 class YandexWeatherCli < Formula
   homepage "https://github.com/msoap/yandex-weather-cli"
-  desc "☀️⛅️❄️ Command line interface for Yandex weather service\n\n"
+  desc "☀️ ⛅️ ❄️ Command line interface for Yandex weather service\n\n"
   version '1.3'
 
   if MacOS.prefer_64_bit?
