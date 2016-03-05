@@ -1,14 +1,14 @@
 class GoCarpet < Formula
   homepage "https://github.com/msoap/go-carpet"
-  desc "Tool for viewing test coverage for Go source files"
-  version '1.1'
+  desc "Tool for viewing test coverage for Go source files\n\nTo view the test coverage in the terminal, just run go-carpet.\n"
+  version '1.2'
 
   if MacOS.prefer_64_bit?
-    url "https://github.com/msoap/go-carpet/releases/download/1.1/go-carpet-1.1.amd64.darwin.zip"
-    sha256 "215ad86003f9d3dc6a1b53a7dfb2332469e4a20534cc71dbead9a9e34695d4b6"
+    url "https://github.com/msoap/go-carpet/releases/download/1.2/go-carpet-1.2.amd64.darwin.zip"
+    sha256 "796cb04d8f11bbd688735b438532f0ce5180494491e9657101ae9d14e8106a95"
   else
-    url "https://github.com/msoap/go-carpet/releases/download/1.1/go-carpet-1.1.386.darwin.zip"
-    sha256 "f68b0152aa1c2c5afa7a174f6eda8c746648b33ee23fd829b64af54dcb33b2c6"
+    url "https://github.com/msoap/go-carpet/releases/download/1.2/go-carpet-1.2.386.darwin.zip"
+    sha256 "c2084810e2756ce41cb81513d7bbc177e4bce7f09d8e486bc049159a87d0752c"
   end
 
   def install
