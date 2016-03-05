@@ -1,5 +1,6 @@
 class Html2data < Formula
   homepage "https://github.com/msoap/html2data"
+  desc "Extract data from HTML via CSS selectors\n\n"
   version '1.0'
 
   if MacOS.prefer_64_bit?

@@ -1,5 +1,6 @@
 class Shell2telegram < Formula
   homepage "https://github.com/msoap/shell2telegram"
+  desc "Create Telegram bot from command-line\n\n"
   version '1.2'
 
   if MacOS.prefer_64_bit?

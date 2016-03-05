@@ -1,5 +1,6 @@
 class Shell2http < Formula
   homepage "https://github.com/msoap/shell2http"
+  desc "Executing shell commands via simple http server\n\nSettings through 2 command line arguments, path and shell command.\n\n"
   version '1.4'
 
   if MacOS.prefer_64_bit?
