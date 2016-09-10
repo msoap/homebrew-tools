@@ -1,14 +1,14 @@
 class Shell2http < Formula
   homepage "https://github.com/msoap/shell2http"
   desc "Executing shell commands via simple http server\n\nSettings through 2 command line arguments, path and shell command.\n\n"
-  version '1.5'
+  version '1.6'
 
   if MacOS.prefer_64_bit?
-    url "https://github.com/msoap/shell2http/releases/download/1.5/shell2http-1.5.amd64.darwin.zip"
-    sha256 "ae0d1f335b40940a9fe657d22825d661a5b976f63d131a99b7b1afe2583ab9fd"
+    url "https://github.com/msoap/shell2http/releases/download/1.6/shell2http-1.6.amd64.darwin.zip"
+    sha256 "eff8f35f25a930dc2dd6a726dcc42dea714d64ec68f313d7088a4d276d37f402"
   else
-    url "https://github.com/msoap/shell2http/releases/download/1.5/shell2http-1.5.386.darwin.zip"
-    sha256 "10cd41365e872194f52f41d810c32e4d0ed685a1d6854029eef43022f4d7e80a"
+    url "https://github.com/msoap/shell2http/releases/download/1.6/shell2http-1.6.386.darwin.zip"
+    sha256 "e492c81b75d4d4c57479b6ed9d751d504b25ef98a650d5a138ffbb7ea083771c"
   end
 
   def install
