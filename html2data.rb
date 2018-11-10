@@ -1,14 +1,14 @@
 class Html2data < Formula
   homepage "https://github.com/msoap/html2data"
   desc "Extract data from HTML via CSS selectors\n\n"
-  version '1.2'
+  version '1.2.1'
 
   if MacOS.prefer_64_bit?
-    url "https://github.com/msoap/html2data/releases/download/1.2/html2data-1.2.darwin.amd64.tar.gz"
-    sha256 "c4d046dccbc35efbe8c9d64c412512e3028de3108206fee0f304ada5a19ff410"
+    url "https://github.com/msoap/html2data/releases/download/v1.2.1/html2data-v1.2.1.darwin.amd64.tar.gz"
+    sha256 "f1a16320a3c9d85316b452017ae75a78e9b58e6fbbf6b137b790adce17bb4e1e"
   else
-    url "https://github.com/msoap/html2data/releases/download/1.2/html2data-1.2.darwin.386.tar.gz"
-    sha256 "031df47850a2d038c45d40582b6e3ebd11eab80ff1fb4d3b16d8a620b81f906b"
+    url "https://github.com/msoap/html2data/releases/download/v1.2.1/html2data-v1.2.1.darwin.386.tar.gz"
+    sha256 "31b12fce8985ab904945561124c71b9b9ca13add56c6ffac26fcaba40054bbfb"
   end
 
   def install
