@@ -3,7 +3,7 @@ class GoCarpet < Formula
   desc "Tool for viewing test coverage for Go source files\n\nTo view the test coverage in the terminal, just run go-carpet.\n\n"
   version '1.7'
 
-  if MacOS.prefer_64_bit?
+  if Hardware::CPU.is_64_bit?
     url "https://github.com/msoap/go-carpet/releases/download/1.7/go-carpet-1.7.darwin.amd64.tar.gz"
     sha256 "9f3671e4784264774376191cc1ad87978ed5f1fdb78640e041bc5994f7307b1f"
   else

@@ -3,7 +3,7 @@ class Html2data < Formula
   desc "Extract data from HTML via CSS selectors\n\n"
   version '1.2.1'
 
-  if MacOS.prefer_64_bit?
+  if Hardware::CPU.is_64_bit?
     url "https://github.com/msoap/html2data/releases/download/v1.2.1/html2data-v1.2.1.darwin.amd64.tar.gz"
     sha256 "f1a16320a3c9d85316b452017ae75a78e9b58e6fbbf6b137b790adce17bb4e1e"
   else
