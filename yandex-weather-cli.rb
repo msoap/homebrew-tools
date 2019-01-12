@@ -3,7 +3,7 @@ class YandexWeatherCli < Formula
   desc "☀️ ⛅️ ❄️ Command line interface for Yandex weather service\n\n"
   version '1.12'
 
-  if MacOS.prefer_64_bit?
+  if Hardware::CPU.is_64_bit?
     url "https://github.com/msoap/yandex-weather-cli/releases/download/1.12/yandex-weather-cli-1.12.darwin.amd64.tar.gz"
     sha256 "ad6433b40a1df0338a8b0a94d3649ed063a25adc9c1b78b2684f7c9496feb70b"
   else
