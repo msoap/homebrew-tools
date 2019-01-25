@@ -1,14 +1,14 @@
 class YandexWeatherCli < Formula
   homepage "https://github.com/msoap/yandex-weather-cli"
   desc "☀️ ⛅️ ❄️ Command line interface for Yandex weather service\n\n"
-  version '1.12'
+  version '1.13'
 
   if Hardware::CPU.is_64_bit?
-    url "https://github.com/msoap/yandex-weather-cli/releases/download/1.12/yandex-weather-cli-1.12.darwin.amd64.tar.gz"
-    sha256 "ad6433b40a1df0338a8b0a94d3649ed063a25adc9c1b78b2684f7c9496feb70b"
+    url "https://github.com/msoap/yandex-weather-cli/releases/download/1.13/yandex-weather-cli-1.13.darwin.amd64.tar.gz"
+    sha256 "3a46e9788424540a0f13aa039b0d53779fe24ca59a93b77d766e315609618d27"
   else
-    url "https://github.com/msoap/yandex-weather-cli/releases/download/1.12/yandex-weather-cli-1.12.darwin.386.tar.gz"
-    sha256 "2718586679f6a2b59714c6399bad1b9884c0fee4fdda86c29a57e81f3befdc0e"
+    url "https://github.com/msoap/yandex-weather-cli/releases/download/1.13/yandex-weather-cli-1.13.darwin.386.tar.gz"
+    sha256 "d42d4ab2e6d2b1805829f5d5d383eb2d644ba35c0dff780031a3555ba24336eb"
   end
 
   def install
