@@ -1,14 +1,32 @@
 class YandexWeatherCli < Formula
   homepage "https://github.com/msoap/yandex-weather-cli"
   desc "☀️ ⛅️ ❄️ Command line interface for Yandex weather service\n\n"
-  version '1.14'
+  version '1.15'
 
-  if Hardware::CPU.is_64_bit?
-    url "https://github.com/msoap/yandex-weather-cli/releases/download/v1.14/yandex-weather-cli-v1.14.darwin.amd64.tar.gz"
-    sha256 "164fa62a8d27a3b119b28f203c156298f633330ce2adb43945835dcb5ab9770d"
-  else
-    url "https://github.com/msoap/yandex-weather-cli/releases/download/v1.14/yandex-weather-cli-v1.14.darwin.386.tar.gz"
-    sha256 "476aa0bd3ce5067c3c62f533580f8292de64c2875c491cc0f67f8435e3942692"
+  if os.Mac? && Hardware::CPU.intel?
+    url "https://github.com/msoap/yandex-weather-cli/releases/download/v1.15/yandex-weather-cli_1.15_darwin_amd64.tar.gz"
+    sha256 "ae9ced91784803021e9cade70e0927a5e2176229cd477a1c0475a715827cd029"
+  end
+  if os.Mac? && Hardware::CPU.arm?
+    url "https://github.com/msoap/yandex-weather-cli/releases/download/v1.15/yandex-weather-cli_1.15_darwin_arm64.tar.gz"
+    sha256 "f92e59c7dcf9041e79bc6232f58fc6479927e54edca40308aad6a4d57f7092ca"
+  end
+
+  if OS.linux? && Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+    url "https://github.com/msoap/yandex-weather-cli/releases/download/v1.15/yandex-weather-cli_1.15_linux_amd64.tar.gz"
+    sha256 "ff6f308dbb8ba9bdd17fdd94f1925a3901b1d49d01d3daa90771b60c3868a135"
+  end
+  if OS.linux? && Hardware::CPU.intel? && !Hardware::CPU.is_64_bit?
+    url "https://github.com/msoap/yandex-weather-cli/releases/download/v1.15/yandex-weather-cli_1.15_linux_386.tar.gz"
+    sha256 "18e79b63318d25edb4ff67894e166da944b764d3a5e8136f47f7857c488262a9"
+  end
+  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+    url "https://github.com/msoap/yandex-weather-cli/releases/download/v1.15/yandex-weather-cli_1.15_linux_arm64.tar.gz"
+    sha256 "c0e992573b88402eef82dfaf6f7a27444929302ecd4eada4f65c905e8d722681"
+  end
+  if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+    url "https://github.com/msoap/yandex-weather-cli/releases/download/v1.15/yandex-weather-cli_1.15_linux_armv6.tar.gz"
+    sha256 "640598147bcd2a862be947544b939c01017f03f7d52f220202cfaf503eae854b"
   end
 
   def install
