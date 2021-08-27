@@ -4,7 +4,7 @@ class YandexWeatherCli < Formula
   version '1.15'
 
   on_macos do
-    if  Hardware::CPU.intel?
+    if Hardware::CPU.intel?
       url "https://github.com/msoap/yandex-weather-cli/releases/download/v1.15/yandex-weather-cli_1.15_darwin_amd64.tar.gz"
       sha256 "ae9ced91784803021e9cade70e0927a5e2176229cd477a1c0475a715827cd029"
     elsif Hardware::CPU.arm?
