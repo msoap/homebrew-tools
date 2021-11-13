@@ -1,0 +1,36 @@
+class YandexWeatherCli < Formula
+  homepage "https://github.com/msoap/yandex-weather-cli"
+  desc "☀️ ⛅️ ❄️ Command line interface for Yandex weather service\n\n"
+  version '{{ ver }}'
+
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/msoap/yandex-weather-cli/releases/download/v{{ ver }}/{{ $2,darwin_amd64.tar.gz }}"
+      sha256 "{{ $1,darwin_amd64.tar.gz }}"
+    elsif Hardware::CPU.arm?
+      url "https://github.com/msoap/yandex-weather-cli/releases/download/v{{ ver }}/{{ $2,darwin_arm64.tar.gz }}"
+      sha256 "{{ $1,darwin_arm64.tar.gz }}"
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/msoap/yandex-weather-cli/releases/download/v{{ ver }}/{{ $2,linux_amd64.tar.gz }}"
+      sha256 "{{ $1,linux_amd64.tar.gz }}"
+    elsif Hardware::CPU.intel? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/msoap/yandex-weather-cli/releases/download/v{{ ver }}/{{ $2,linux_386.tar.gz }}"
+      sha256 "{{ $1,linux_386.tar.gz }}"
+    elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/msoap/yandex-weather-cli/releases/download/v{{ ver }}/{{ $2,linux_arm64.tar.gz }}"
+      sha256 "{{ $1,linux_arm64.tar.gz }}"
+    elsif Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/msoap/yandex-weather-cli/releases/download/v{{ ver }}/{{ $2,linux_armv6.tar.gz }}"
+      sha256 "{{ $1,linux_armv6.tar.gz }}"
+    end
+  end
+
+  def install
+    bin.install "yandex-weather-cli"
+    man1.install "yandex-weather-cli.1"
+  end
+end

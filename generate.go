@@ -18,7 +18,7 @@ import (
 
 var (
 	reVars   = regexp.MustCompile(`{{\s*(\S+)\s*}}`)
-	reVer    = regexp.MustCompile(`_(\d+\.\d+\.\d+)_`)
+	reVer    = regexp.MustCompile(`_(\d+\.\d+(?:\.\d+)?)_`)
 	reFileds = regexp.MustCompile(`\$(\d),(\S+)`) // $2,darwin_amd64.tar.gz
 )
 
