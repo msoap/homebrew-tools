@@ -12,10 +12,6 @@ Install [shell2telegram](https://github.com/msoap/shell2telegram):
 
     brew install shell2telegram
 
-Install [yandex-weather-cli](https://github.com/msoap/yandex-weather-cli):
-
-    brew install yandex-weather-cli
-
 Install [html2data](https://github.com/msoap/html2data):
 
     brew install html2data
