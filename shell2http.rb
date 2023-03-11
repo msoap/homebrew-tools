@@ -6,26 +6,26 @@ class Shell2http < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/msoap/shell2http/releases/download/v1.16.0/shell2http_1.16.0_darwin_amd64.tar.gz"
-      sha256 "b1c28e5ad3549b7c2d3c603d49698830d8ec26e5beda01519659512535ffaeda"
+      sha256 "371b152ce03f5ef3f0fab40f9874d9dbece94f337908c0059254732a99146631"
     elsif Hardware::CPU.arm?
       url "https://github.com/msoap/shell2http/releases/download/v1.16.0/shell2http_1.16.0_darwin_arm64.tar.gz"
-      sha256 "3b59bee39c823392e3b52450e0323f76eb4ae22c91707840faca8834cbf8e288"
+      sha256 "0f11e6f6962d091d17af231e752f54a07e722d5941c51c8b9fa25eb318cb54ff"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/msoap/shell2http/releases/download/v1.16.0/shell2http_1.16.0_linux_amd64.tar.gz"
-      sha256 "2eb6dd4a59b7cec0a6e21506b48c00bb57c78229c4a2212729999ec3967e2523"
+      sha256 "82881123f9f027648e67904cef616729e693f12b09c917e41cf9566e9c337a03"
     elsif Hardware::CPU.intel? && !Hardware::CPU.is_64_bit?
       url "https://github.com/msoap/shell2http/releases/download/v1.16.0/shell2http_1.16.0_linux_386.tar.gz"
-      sha256 "c30510a6010ccf1e43d95a89c57f391a15c7cb5ef09cf7cd782cbcf3c870c1ee"
+      sha256 "9c270f0cb657d9b7df36f6dacb308f243cf9a7577aeb65c5ca266995b1856629"
     elsif Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/msoap/shell2http/releases/download/v1.16.0/shell2http_1.16.0_linux_arm64.tar.gz"
-      sha256 "aeaad90093c724aac4c50097674553c30bf6d12b318ca8f28a95179bab20c4ff"
+      sha256 "7169ae141c0d1e3f1036c2a6b3546907ef5c1836e8d9ae276a6acb46bb9ae567"
     elsif Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/msoap/shell2http/releases/download/v1.16.0/shell2http_1.16.0_linux_armv6.tar.gz"
-      sha256 "e626560c3ac49b05194be81b3b94e22c9b5cf28f1259032c7c881bf013b3a1fc"
+      sha256 "8e8f838f24e79e104bc48ad7b3cf07fdb4dde7f829a5c3a09c285dce06c2cc94"
     end
   end
 
